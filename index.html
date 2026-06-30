@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willer González | Portafolio Tecnológico</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">&lt;Willer.Dev /&gt;</a>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#interactivo">Área Interactiva</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Hola, soy <span>Willer Pablo González Velasco</span></h1>
+            <p>Desarrollador Backend, Web, Escritorio y Aplicaciones Móviles | Especialista en Servidores y Análisis de Datos</p>
+            <a href="#interactivo" class="btn">Probar Consola Interactiva</a>
+        </div>
+    </header>
+
+    <section id="sobre-mi" class="section">
+        <h2>Sobre Mí</h2>
+        <div class="container text-center">
+            <p>Soy un profesional de la tecnología apasionado por la arquitectura de software y la optimización de sistemas. Con una sólida trayectoria como <strong>Analista de Tecnología</strong>, me especializo en crear aplicaciones robustas, gestionar infraestructura de servidores y realizar análisis avanzados de bases de datos.</p>
+            <p>Destaco por mi alta adaptabilidad y mi propensión innata a aprender cualquier lenguaje o framework que el proyecto requiera de manera rápida y eficiente.</p>
+        </div>
+    </section>
+
+    <section id="habilidades" class="section bg-light">
+        <h2>Mis Habilidades</h2>
+        <div class="container grid-3">
+            <div class="card">
+                <h3>Lenguajes Core</h3>
+                <ul>
+                    <li>JavaScript (Frontend & Backend)</li>
+                    <li>Python (Automatización y Backend)</li>
+                    <li>PHP (Laravel & Core)</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Frontend & Entorno</h3>
+                <ul>
+                    <li>HTML5 & CSS3 (Diseño Adaptable)</li>
+                    <li>Creación de Interfaces Limpias</li>
+                    <li>Aplicaciones Móviles y de Escritorio</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Infraestructura y Datos</h3>
+                <ul>
+                    <li>Administración y Optimización de Servidores</li>
+                    <li>Modelado y Análisis de Bases de Datos</li>
+                    <li>Seguridad Informática y Soporte de Aplicaciones</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="section">
+        <h2>Experiencia Relevante</h2>
+        <div class="container timeline">
+            <div class="timeline-item">
+                <h4>Gerencia de Tecnología — Misión Fundaproal</h4>
+                <span class="date">Analista II (2018 - Presente)</span>
+                <p>Desarrollo y supervisión de sistemas informáticos, soporte técnico avanzado de aplicaciones de misión crítica, mantenimiento correctivo y preventivo de servidores, redes corporativas y aseguramiento de la conectividad institucional.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="interactivo" class="section bg-dark text-white">
+        <h2>Demostración Interactiva: Análisis de Datos</h2>
+        <p class="text-center">Ejecuta consultas de análisis de datos simuladas para ver cómo estructuro y filtro la información en tiempo real.</p>
+        
+        <div class="console-container">
+            <div class="console-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="title">willer-dev@server:~ /analisis-db</span>
+            </div>
+            <div class="console-body">
+                <p class="comment">// Selecciona una consulta predefinida para probar el analizador:</p>
+                <div class="btn-group">
+                    <button onclick="ejecutarQuery('PROYECTOS')">VER PROYECTOS CRÍTICOS</button>
+                    <button onclick="ejecutarQuery('SERVIDORES')">RENDIMIENTO SERVIDORES</button>
+                    <button onclick="ejecutarQuery('LIMPIAR')">LIMPIAR CONSOLA</button>
+                </div>
+                <div id="resultado-consola" class="console-output">
+                    Esperando acción del usuario...
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Willer González. Desarrollado con HTML, CSS y JS nativo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
